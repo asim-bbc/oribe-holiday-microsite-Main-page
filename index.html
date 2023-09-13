@@ -102,16 +102,18 @@ element.classList.toggle("hidden");
           </div>
         </div>
 
-        <div class=" images_grid_wrapper">
-          <div class="images_single">
+        <div class=" swiper mobile_slider_images">
+          <div class=" swiper-wrapper images_grid_wrapper">
+          <div class="images_single swiper-slide">
             <img src="./assets/sec_barth_02_im1.png" alt="" srcset="">
           </div>
-          <div class="images_single">
+          <div class="images_single swiper-slide">
             <img src="./assets/sec_barth_02_im2.png" alt="" srcset="">
           </div>
-          <div class="images_single">
+          <div class="images_single swiper-slide">
             <img src="./assets/sec_barth_02_im3.png" alt="" srcset="">
           </div>
+        </div>
         </div>
       </section>
 
@@ -307,18 +309,19 @@ element.classList.toggle("hidden");
             
           </div>
         </div>
-
-        <div class=" images_grid_wrapper">
-          <div class="images_single">
+<div class="mobile_slider_images_2 swiper">
+        <div class="swiper-wrapper images_grid_wrapper">
+          <div class="images_single swiper-slide">
             <img src="./assets/sec_barth_02_img_4.png"alt="" srcset="">
           </div>
-          <div class="images_single">
+          <div class="images_single swiper-slide">
             <img src="./assets/sec_barth_02_img_5.png" alt="" srcset="">
           </div>
-          <div class="images_single">
+          <div class="images_single swiper-slide">
             <img src="./assets/sec_barth_02_img_6.png" alt="" srcset="">
           </div>
         </div>
+      </div>
       </section>
 
       <section class="video_with_playbutton max_page_width ">
@@ -607,6 +610,7 @@ element.classList.toggle("hidden");
   },
     }); 
     var swiper2 = new Swiper(".image_with_text_swiper", {  
+      cssMode: true,
       breakpoints: {
       640: {
         slidesPerView: 1,
@@ -623,6 +627,30 @@ element.classList.toggle("hidden");
     prevEl: '.new_swiper_prev',
   },
     }); 
+    
+    var swiper3 = new Swiper(".mobile_slider_images", {  
+      cssMode: true,
+      breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+      }
+    }
+    }); 
+    var swiper3 = new Swiper(".mobile_slider_images_2", {  
+      cssMode: true,
+      breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+      }
+    }
+    }); 
+    
           const videoElement = document.querySelectorAll('.video video');
       const playPauseButton = document.querySelectorAll('.vidButton');
     

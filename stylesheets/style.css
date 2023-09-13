@@ -9969,11 +9969,7 @@ img{
 
 
 @media only screen and (max-width: 600px){
-	.divider{
-		border-bottom: 2px solid black;
-		width: 100px;
-		margin: 64px auto;
-	}
+	 
 
 
 	.product-title, .product-title-sub{
@@ -10781,7 +10777,7 @@ section.section_05 {
 		padding-top: 30px;
 	}
 	.divider { 
-		margin: 10px 0 10px;
+		margin: 0 0 10px;
 	}
 	.main-page-subheading {
 		font-size: 30px;
@@ -11059,6 +11055,29 @@ section.section_05 {
 	}
 	section.section_08.past_collaboration p.sub_text { 
 		font-size: 14px;
+	}
+	.swiper.mobile_slider_images {
+		width: 100%;
+		height: 100%;
+	  }
+  
+	 .mobile_slider_images .swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+  
+	 .mobile_slider_images .swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	  }
+	  .mobile_slider_images_2 , .swiper.mobile_slider_images{
+		padding: 0 14px;
 	}
 }
 

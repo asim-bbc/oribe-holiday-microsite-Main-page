@@ -10737,7 +10737,9 @@ section.top_navigation_bar .page_1_wrapper {
 }
 
 @media only screen and (max-width: 767px){
-	
+	.swiper.products_swiper .swiper-button-next,.swiper.products_swiper .swiper-rtl .swiper-button-prev, .swiper.products_swiper .swiper-button-prev.new_swiper_prev,.swiper.products_swiper .swiper-button-prev {
+		top: 35%; 
+	}
     .swiper-pagination-bullet {
 		width: 13px;
 height: 13px;

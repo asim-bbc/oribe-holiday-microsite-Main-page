@@ -229,7 +229,7 @@ element.classList.toggle("hidden");
     <section class="section_07"> 
       <div class="banner_wrapper">
           <img class="hidden-mobile" src="assets/banner_barth_01.png"> 
-          <img class="hidden-desktop" src="assets/banner_barth_01.png"> 
+          <img class="hidden-desktop" src="assets/banner_barth_01_mbl.png"> 
            
           
       </div>
@@ -306,7 +306,7 @@ element.classList.toggle("hidden");
       <section class="section_03"> 
         <div class="banner_wrapper">
             <img class="hidden-mobile" src="assets/banner_barth_02.png"> 
-            <img class="hidden-desktop" src="assets/banner_barth_02.png">  
+            <img class="hidden-desktop" src="assets/banner_barth_02_mbl.png">  
             
         </div>
               
@@ -611,6 +611,7 @@ element.classList.toggle("hidden");
 
         $(document).ready(function(){
           var swiper = new Swiper(".products_swiper", {  
+            cssMode: true,
       breakpoints: {
       640: {
         slidesPerView: 1,

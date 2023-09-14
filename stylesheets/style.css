@@ -10589,7 +10589,7 @@ section.top_navigation_bar .page_1_wrapper {
     background: none;
     border: none;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1024px){
 	section.section_08 .products_swiper  .swiper-button-next,section.section_08 .products_swiper   .swiper-rtl .swiper-button-prev,
 	section.section_08 .products_swiper  .swiper-button-prev.new_swiper_prev,section.section_08 .products_swiper   .swiper-button-prev {
 		top:35%;
@@ -10755,7 +10755,7 @@ section.top_navigation_bar .page_1_wrapper {
 	}
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 1023px){
 	.swiper.products_swiper .swiper-button-next,.swiper.products_swiper .swiper-rtl .swiper-button-prev, .swiper.products_swiper .swiper-button-prev.new_swiper_prev,.swiper.products_swiper .swiper-button-prev {
 		top: 35%; 
 	}

@@ -10584,7 +10584,9 @@ video::-webkit-media-controls-progress-bar {
 	display: none!important;
   }
    
-   
+  button.video-control.vidButton.playing{
+	opacity: 0;
+  }
 @media only screen and (min-width: 1024px){
 	section.section_08 .products_swiper  .swiper-button-next,section.section_08 .products_swiper   .swiper-rtl .swiper-button-prev,
 	section.section_08 .products_swiper  .swiper-button-prev.new_swiper_prev,section.section_08 .products_swiper   .swiper-button-prev {

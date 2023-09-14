@@ -652,6 +652,10 @@ element.classList.toggle("hidden");
     var swiper3 = new Swiper(".mobile_slider_images", {  
       cssMode: true,
       spaceBetween: 20,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

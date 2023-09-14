@@ -671,7 +671,7 @@ element.classList.toggle("hidden");
     var swiper3 = new Swiper(".mobile_slider_images_2", {  
       cssMode: true,
       spaceBetween: 20,
-      
+
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -704,7 +704,7 @@ element.classList.toggle("hidden");
             btn.classList.toggle('playing');
             if (btn.classList.contains('playing')) {
               btn.previousElementSibling.play();
-              btn.previousElementSibling.controls = true;
+              btn.previousElementSibling.controls = false;
             }
             else {
               btn.previousElementSibling.pause();

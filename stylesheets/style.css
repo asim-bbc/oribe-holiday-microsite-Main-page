@@ -8376,7 +8376,7 @@ em {
 				0.12
 			);
 }
-button:focus { 
+button:focus , .swiper-button-next:focus ,.swiper-button-prev:focus{ 
 	outline: auto!important;
 }
 .btn:active {

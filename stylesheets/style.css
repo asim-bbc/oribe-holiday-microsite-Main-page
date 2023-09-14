@@ -10351,7 +10351,7 @@ footer .email-input-container input {
 }
 p.pdp_title {
     margin-top: 0;
-    height: -webkit-fill-available;
+    height: fit-content;
 	max-height: 100px;
 }
 video { 
@@ -10500,6 +10500,9 @@ section.section_08 p.small_text_bottom {
 .swiper-button-next, .swiper-rtl .swiper-button-prev , .swiper-button-prev.new_swiper_prev , .swiper-button-prev{
     width: 49px;
     height: 49px; 
+	background: transparent;
+	outline: none;
+	border: none;
 }
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after , .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
    display: none;

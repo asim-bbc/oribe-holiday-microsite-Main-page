@@ -87,7 +87,7 @@ element.classList.toggle("hidden");
       <section class="section_01 video-bg position-relative "  data-scroll="">
         <div class="video_single_container" aria-hidden="true">
           
-          <video width="100%" autoplay=""  muted="" playsinline="" src="./assets/makers-final-16x9.mp4"></video>
+          <video width="100%" autoplay="" loop="" muted="" playsinline="" src="./assets/makers-final-16x9.mp4"></video>
         </div>
         
         
@@ -631,18 +631,23 @@ element.classList.toggle("hidden");
   },
     }); 
     var swiper2 = new Swiper(".image_with_text_swiper", {  
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+     
       loop: true,
       cssMode: true,
       breakpoints: {
       640: {
         slidesPerView: 1,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       },
       768: {
         slidesPerView: 1,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       },
       1100: {
         slidesPerView: 1,
@@ -775,7 +780,7 @@ element.classList.toggle("hidden");
   });
 
   // Get all video modules and observe them
-  const videoModules = document.querySelectorAll('video');
+  const videoModules = document.querySelectorAll('.video_with_playbutton video');
   videoModules.forEach((video) => {
     observer.observe(video);
   });

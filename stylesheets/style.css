@@ -8377,7 +8377,7 @@ em {
 			);
 }
 button:focus { 
-	outline: auto;
+	outline: auto!important;
 }
 .btn:active {
 	-webkit-transform: translateY(2px);

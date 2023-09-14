@@ -10759,6 +10759,10 @@ section.section_01.video-bg.position-relative video {
     width: 100%;
     object-fit: cover;
 }
+a.btn.btn--primary.btn--md.width-100\%.text-uppercase{
+	padding-left: 0;
+	padding-right: 0;
+}
 @media only screen and (max-width: 1023px){
 	.swiper.products_swiper .swiper-button-next,.swiper.products_swiper .swiper-rtl .swiper-button-prev, .swiper.products_swiper .swiper-button-prev.new_swiper_prev,.swiper.products_swiper .swiper-button-prev {
 		top: 35%; 

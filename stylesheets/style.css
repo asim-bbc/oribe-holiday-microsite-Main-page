@@ -10585,6 +10585,10 @@ section.top_navigation_bar .page_1_wrapper {
 .swiper.products_swiper {
     max-width: 1516px;
 }
+.video-control { 
+    background: none;
+    border: none;
+}
 @media only screen and (min-width: 768px){
 	section.section_08 .products_swiper  .swiper-button-next,section.section_08 .products_swiper   .swiper-rtl .swiper-button-prev,
 	section.section_08 .products_swiper  .swiper-button-prev.new_swiper_prev,section.section_08 .products_swiper   .swiper-button-prev {

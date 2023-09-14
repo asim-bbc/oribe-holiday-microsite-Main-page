@@ -10945,6 +10945,8 @@ section.section_05 {
 	.product-card-info.width-50\%.flex.flex-column.flex-center.padding-x-xl {
 		text-align: center;
 		align-items: center;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	.text-xl.text-left.product-title , .text-xl.text-center.product-title.text-truncate.margin-bottom-lg {
 		font-size: 38px;
@@ -11182,6 +11184,9 @@ section.section_05 {
 	}
 }
 
+@media only screen and (max-width: 767px){
+
+}
 section.section_09.position-sticky.bottom-0 a.btn.btn--primary.btn--md.width-100\%.text-uppercase{
 	width: 100%;
 	max-width: 100%;

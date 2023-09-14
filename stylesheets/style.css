@@ -8376,22 +8376,8 @@ em {
 				0.12
 			);
 }
-button:focus {
-	-webkit-box-shadow: 0 0 0 2px
-	hsla(
-		210, /* Adjusted hue value for blue */
-		var(--color-contrast-higher-s),
-		var(--color-contrast-higher-l),
-		0.15 /* Alpha value remains the same */
-	  );
-	box-shadow: 0 0 0 2px
-	hsla(
-		210, /* Adjusted hue value for blue */
-		var(--color-contrast-higher-s),
-		var(--color-contrast-higher-l),
-		0.15 /* Alpha value remains the same */
-	  );
-	outline: none;
+button:focus { 
+	outline: auto;
 }
 .btn:active {
 	-webkit-transform: translateY(2px);

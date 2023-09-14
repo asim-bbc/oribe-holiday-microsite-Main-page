@@ -10814,7 +10814,7 @@ height: 13px;
 	section.top_navigation_bar { 
 		font-size: 14px;
 		gap: 39px;
-		justify-content: flex-start;
+		justify-content: center;
 		padding: 17px 24px;
 	}
 	.section_04 p.font-secondary.text-xl.font-light.letter-spacing-md {
@@ -11187,9 +11187,11 @@ section.section_05 {
 	}
 }
 
-@media only screen and (max-width: 767px){
-
-}
+@media only screen and (max-width: 768px){
+	section.top_navigation_bar { 
+		justify-content: flex-start; 
+	}
+  }
 section.section_09.position-sticky.bottom-0 a.btn.btn--primary.btn--md.width-100\%.text-uppercase{
 	width: 100%;
 	max-width: 100%;

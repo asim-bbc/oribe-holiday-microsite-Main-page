@@ -710,7 +710,8 @@ element.classList.toggle("hidden");
     
       videoElement.forEach(vid => {
         vid.addEventListener('ended', () => {
-          vid.nextElementSibling.classList.remove('playing');
+          vid.currentTime = 0;
+          vid.nextElementSibling.classList.remove('playing'); 
         });
     
         vid.addEventListener('pause', function(){
@@ -733,7 +734,36 @@ element.classList.toggle("hidden");
             /* jQuery
           ================================================== */
          
+ // Function to mute the video
+ function muteVideo(video) {
+    video.muted = true;
+  }
 
+  // Function to unmute the video
+  function unmuteVideo(video) {
+    video.muted = false;
+  }
+
+  // Create an Intersection Observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const video = entry.target;
+
+      if (entry.isIntersecting) {
+        // Video is in the viewport, unmute it
+        unmuteVideo(video);
+      } else {
+        // Video is out of the viewport, mute it
+        muteVideo(video);
+      }
+    });
+  });
+
+  // Get all video modules and observe them
+  const videoModules = document.querySelectorAll('video');
+  videoModules.forEach((video) => {
+    observer.observe(video);
+  });
   
 
         })

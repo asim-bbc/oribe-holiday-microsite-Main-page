@@ -10363,7 +10363,7 @@ video {
 .images_grid_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 23px;
+    /* gap: 23px; */
     padding-top: 65px;
     padding-bottom: 82px;
 }

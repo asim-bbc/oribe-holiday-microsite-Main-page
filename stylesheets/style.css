@@ -10554,7 +10554,8 @@ section.section_08.past_collaboration p.detail {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 79px;
-    align-items: center;
+    align-items: start;
+	padding-left: 15px;
 }
 .image_with_text_swiper{
 	max-width: calc(1235px + 160px);
@@ -10593,6 +10594,11 @@ section.top_navigation_bar .page_1_wrapper {
 .image_wrapper img{
 	width: 100%;
 }
+video::-webkit-media-controls-progress-bar {
+	display: none!important;
+  }
+   
+   
 @media only screen and (min-width: 1024px){
 	section.section_08 .products_swiper  .swiper-button-next,section.section_08 .products_swiper   .swiper-rtl .swiper-button-prev,
 	section.section_08 .products_swiper  .swiper-button-prev.new_swiper_prev,section.section_08 .products_swiper   .swiper-button-prev {
@@ -11104,6 +11110,7 @@ section.section_05 {
 	.past_collaboraiton_slide { 
 		grid-template-columns: 1fr;
 		gap: 14px; 
+		padding-left: 0;
 	}
 	.image_wrapper {
 		order: -1;

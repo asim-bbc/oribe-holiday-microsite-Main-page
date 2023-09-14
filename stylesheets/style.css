@@ -10425,6 +10425,7 @@ span.video-control-play , span.video-control-pause{
 @media only screen and (max-width: 900px){
 	.video svg{
 		width: 50px;
+		height: 50px;
 	}
 }
 
@@ -10588,6 +10589,9 @@ section.top_navigation_bar .page_1_wrapper {
 .video-control { 
     background: none;
     border: none;
+}
+.image_wrapper img{
+	width: 100%;
 }
 @media only screen and (min-width: 1024px){
 	section.section_08 .products_swiper  .swiper-button-next,section.section_08 .products_swiper   .swiper-rtl .swiper-button-prev,
@@ -10764,6 +10768,9 @@ a.btn.btn--primary.btn--md.width-100\%.text-uppercase{
 	padding-right: 0;
 }
 @media only screen and (max-width: 1023px){
+	section.section_08.past_collaboration {
+		margin-top: 70px; 
+	}
 	.swiper.products_swiper .swiper-button-next,.swiper.products_swiper .swiper-rtl .swiper-button-prev, .swiper.products_swiper .swiper-button-prev.new_swiper_prev,.swiper.products_swiper .swiper-button-prev {
 		top: 35%; 
 	}

@@ -10354,7 +10354,7 @@ p.pdp_title {
 	max-height: 100px;
 }
 video { 
-    max-height: 650px;
+    max-height: 750px;
     width: 100%;
     object-fit: cover;
 }

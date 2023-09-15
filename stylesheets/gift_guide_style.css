@@ -10225,7 +10225,7 @@ line-height: 150%; /* 39px */
 		flex-shrink: 0;
 		margin: auto; 
     display: flex; 
-	font-size: 24px;
+	font-size: 18px;
 } .load_more:hover { 
     background: #000;
     opacity: 0.8;
@@ -10378,6 +10378,25 @@ section.top_navigation_bar .page_2_wrapper {
     text-decoration: underline;
     text-underline-offset: 2px;
 }
+
+.muteUnmute {
+    width: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+	z-index: 9;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+.muteUnmute.hide-mute .mute-class{
+display: none;
+}
+.muteUnmute.hide-unmute .unmute-class{
+	display: none;
+	}
+
 @media only screen and (min-width: 768px){
 	.hidden-desktop{
 		display: none!important;
@@ -10405,7 +10424,7 @@ section.top_navigation_bar .page_2_wrapper {
 		max-width: 1004px;
 	}
 	.section_02 p.letter-spacing-md.text-lg.main-page-sub-subheading{
-		font-size: 26px;
+		font-size: 22px;
 		font-weight: normal;
   font-stretch: condensed;
   font-style: normal;
@@ -10429,7 +10448,7 @@ section.top_navigation_bar .page_2_wrapper {
 	}
 	.product-card-desc.text-md.padding-x-xs.margin-bottom-md {
 		padding-left: 0;
-		font-size: 20px;
+		font-size: 22px;
 		font-weight: normal;
 		font-stretch: condensed;
 		font-style: normal;
@@ -10515,7 +10534,7 @@ section.top_navigation_bar .page_2_wrapper {
 		margin: 0 auto;
 		padding: 20px 61px 20px 62px;
 		background-color: #000;
-		font-size: 24px;
+		font-size: 18px;
 		font-weight: normal;
 		font-stretch: condensed;
 		font-style: normal;
@@ -10533,12 +10552,23 @@ section.top_navigation_bar .page_2_wrapper {
 		font-size: 38px;
 	}
 }
-
+@media only screen and (max-width: 900px){
+	.video svg{
+		width: 50px;
+	}
+}
 @media only screen and (max-width: 767px){
+	.muteUnmute svg{
+		width: 25px; 
+	}
+	.muteUnmute { 
+		bottom: 15px;
+		left: 15px; 
+	}
     section.top_navigation_bar { 
 		font-size: 14px;
 		gap: 39px;
-		justify-content: flex-start;
+		justify-content: center;
 		padding: 17px 24px;
 	}
 	.section_04 p.font-secondary.text-xl.font-light.letter-spacing-md {

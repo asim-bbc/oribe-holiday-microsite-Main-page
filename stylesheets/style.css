@@ -9971,7 +9971,7 @@ img{
 		width: 100%;
 	}
 	.product-card-info{
-		padding: 32px;
+		padding: 30px;
 	}
 
 	.btn-mobile{
@@ -10416,11 +10416,12 @@ span.video-control-play , span.video-control-pause{
 }
 
 p.section_title.font-secondary {
-    font-size: 37px;
+    font-size: 28px;
     font-style: italic;
     font-weight: 400;
     line-height: 110%;
-    margin-bottom: 29px;
+    margin-bottom: 20px;
+	text-align: center;
 }
 .group_images_section p.section_title {
     text-align: center;
@@ -10429,11 +10430,11 @@ p.section_title.font-secondary {
     font-style: italic;
     font-weight: 400;
     line-height: 110%;
-	margin-bottom: 41px;
+	margin-bottom: 30px;
 }
 .group_images_section p.section_description {
     text-align: center;
-    font-size: 28px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 300;
     line-height: 150%;
@@ -10508,7 +10509,7 @@ section.section_08.past_collaboration p.sub_text {
     color: #000;
     text-align: center;
     font-feature-settings: 'liga' off;
-    font-size: 28px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 300;
     line-height: 150%;
@@ -10528,6 +10529,7 @@ section.section_08.past_collaboration p.title.font-secondary {
     font-style: italic;
     font-weight: 400;
     line-height: 100%;
+	margin-bottom: 20px;
 }
 section.section_08.past_collaboration p.detail {
     color: #000; 
@@ -10587,6 +10589,25 @@ video::-webkit-media-controls-progress-bar {
   button.video-control.vidButton.playing{
 	opacity: 0;
   }
+  
+  .muteUnmute {
+    width: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+	z-index: 9;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+.muteUnmute.hide-mute .mute-class{
+display: none;
+}
+.muteUnmute.hide-unmute .unmute-class{
+	display: none;
+	}
+
 @media only screen and (min-width: 1024px){
 	section.section_08 .products_swiper  .swiper-button-next,section.section_08 .products_swiper   .swiper-rtl .swiper-button-prev,
 	section.section_08 .products_swiper  .swiper-button-prev.new_swiper_prev,section.section_08 .products_swiper   .swiper-button-prev {
@@ -10624,7 +10645,7 @@ video::-webkit-media-controls-progress-bar {
 		max-width: 1004px;
 	}
 	.section_02 p.letter-spacing-md.text-lg.main-page-sub-subheading{
-		font-size: 28px;
+		font-size: 22px;
 		font-weight: normal;
   font-stretch: condensed;
   font-style: normal;
@@ -10648,7 +10669,7 @@ video::-webkit-media-controls-progress-bar {
 	}
 	.product-card-desc.text-md.padding-x-xs.margin-bottom-md {
 		padding: 0;
-		font-size: 28px;
+		font-size: 22px;
 		font-weight: normal;
 		font-stretch: condensed;
 		font-style: normal;
@@ -10753,20 +10774,34 @@ video::-webkit-media-controls-progress-bar {
 	}
 }
 section.section_01.video-bg.position-relative video {
-    max-height: 650px;
+    max-height: 750px;
     width: 100%;
     object-fit: cover;
+	object-position: bottom;
 }
 a.btn.btn--primary.btn--md.width-100\%.text-uppercase{
 	padding-left: 0;
 	padding-right: 0;
 }
+
+@media only screen and (max-width: 900px){
+	.video svg{
+		width: 50px;
+	}
+}
 @media only screen and (max-width: 1023px){
+	.muteUnmute svg{
+		width: 25px; 
+	}
+	.muteUnmute { 
+		bottom: 15px;
+		left: 15px; 
+	}
 	p.section_title.font-secondary{
 		margin-top: 30px;
 	}
 	section.section_08.past_collaboration {
-		margin-top: 70px; 
+		margin-top: 40px; 
 	}
 	.swiper.products_swiper .swiper-button-next,.swiper.products_swiper .swiper-rtl .swiper-button-prev, .swiper.products_swiper .swiper-button-prev.new_swiper_prev,.swiper.products_swiper .swiper-button-prev {
 		top: 35%; 
@@ -10830,14 +10865,16 @@ height: 13px;
 		font-size: 22px;
 	}
 	.section_02 p.pre_heading { 
-		padding-bottom: 20px;
+		padding-bottom: 0;
 		padding-top: 15px;
 	}
+	
 	.section_02 p.font-secondary.text-xxxl.main-page-heading-sm {
 		font-size: 38px;
 	}
 	.section_02 p.pre_heading {
 		font-size: 22px; 
+		margin: 0 10px;
 	}
 	.main-page-heading-container{
 		max-width: 329px;
@@ -10887,7 +10924,7 @@ section.section_05 {
 		line-height: 1.5;
 		letter-spacing: normal;
 		text-align: center;
-		padding-top: 17px;
+		padding-top: 10px;
 	}
 	.section_06, .section_08, .section_10, .section_12{
 		padding: 40px 20px 40px 20px;
@@ -10968,7 +11005,7 @@ section.section_05 {
 	.product-card-desc {
 		margin-bottom: 0;
 		padding: 0;
-		font-size: 14px;
+		font-size: 16px;
 		font-weight: normal;
 		font-stretch: condensed;
 		font-style: normal;
@@ -11070,21 +11107,30 @@ section.section_05 {
 	}
 	.images_grid_wrapper { 
 		padding-top: 25px;
-		padding-bottom: 40px;
+		padding-bottom: 30px;
+	}
+	.group_images_section p.section_description{
+		margin-bottom: 40px;
 	}
 	.group_images_section p.section_title{
 		font-size: 23px;
 		margin-bottom: 25px;
 	}
 	.group_images_section p.section_description { 
-		font-size: 14px; 
+		font-size: 16px; 
 		padding: 0 35px;
 	}
 	.group_images_section .group_wrapper { 
 		gap: 0; 
 	}
 	section.max_page_width.group_images_section {
-		padding-bottom: 63px;
+		padding-bottom: 40px;
+	}
+	.products_grid_wrapper{
+		padding-bottom: 30px;
+	}
+	.section_08{
+		margin-bottom: 40px;
 	}
 	section.section_08 h2.title.font-secondary { 
 		font-size: 38px;
@@ -11110,19 +11156,29 @@ section.section_05 {
 	}
 	section.section_08.past_collaboration p.title.font-secondary , section.section_08.past_collaboration p.date_wrapper.font-secondary {
 		font-size: 34px;
+		margin-bottom: 10px;
 	} 
+	section.max_page_width.section_02{
+		padding-top: 40px;
+	}
+	section.max_page_width.section_02.first_one{
+		padding-top: 30px;
+	}
 	section.section_08.past_collaboration p.detail { 
-		font-size: 14px;
+		font-size: 16px;
 	}
 	p.section_title.font-secondary { 
 		margin-bottom: 11px;
 		font-size: 23px;
 	}
+	.video_with_playbutton p.section_title.font-secondary{
+		font-size: 18px;
+	}
 	section.video_with_playbutton {
 		padding: 0 19px;
 	}
 	section.section_03 {
-		padding-top: 63px;
+		padding-top: 40px;
 	}
 	section.section_05 p.section_title { 
 		font-size: 38px;
@@ -11131,7 +11187,7 @@ section.section_05 {
 		font-size: 22px;
 	}
 	section.section_05 { 
-		padding-top: 22px;
+		padding-top: 30px;
 	}
 	section.section_05 .text_wrapper { 
 		padding-bottom: 30px;
@@ -11148,7 +11204,7 @@ section.section_05 {
 		width: 100%;
 	}
 	section.section_08.past_collaboration p.sub_text { 
-		font-size: 14px;
+		font-size: 16px;
 	}
 	.swiper.mobile_slider_images {
 		width: 100%;
@@ -11180,7 +11236,7 @@ section.section_05 {
 		margin-top: 0px;
 	}
 	section.top_navigation_bar { 
-		justify-content: flex-start; 
+		justify-content: center; 
 	}
   }
 section.section_09.position-sticky.bottom-0 a.btn.btn--primary.btn--md.width-100\%.text-uppercase{

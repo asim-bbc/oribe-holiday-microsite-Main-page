@@ -10777,7 +10777,7 @@ section.section_01.video-bg.position-relative video {
     max-height: 750px;
     width: 100%;
     object-fit: cover;
-	object-position: bottom;
+	object-position: 50% 75%;
 }
 a.btn.btn--primary.btn--md.width-100\%.text-uppercase{
 	padding-left: 0;
